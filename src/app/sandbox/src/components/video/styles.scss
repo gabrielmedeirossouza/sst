@@ -1,0 +1,63 @@
+.component-video {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  
+  .video-area {
+    aspect-ratio: 16 / 9;
+    height: 100%;
+    margin: 0 auto;
+    
+    .video {
+      width: 100%;
+      height: 100%;
+    }
+
+    .control {
+      visibility: visible;
+      position: absolute;
+      bottom: 0;
+      left: 30px;
+      width: calc(100% - 60px);
+
+      &.hide {
+        visibility: hidden;
+      }
+
+      .control__actions {
+        display: flex;
+        gap: 10px;
+      }
+
+      .control__progress-area {
+        display: flex;
+        justify-content: center;
+
+        .control__progress-area__progress {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .subtitle-area {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+
+    .subtitle-area__container {
+      border: 1px solid tomato;
+      border-radius: 4px;
+      background-color: #0000008f;
+      padding: 10px 20px;
+  
+      span {
+        font-size: 40px;
+        color: #ffffff;
+        white-space: nowrap;
+      }
+    }
+  }
+}

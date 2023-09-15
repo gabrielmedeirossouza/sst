@@ -1,0 +1,23 @@
+{
+  "name": "@sst/channel",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/channel.js",
+  "types": "./dist/main.d.ts",
+  "scripts": {
+    "test:dev": "vitest --mode development",
+    "test:prod": "vitest --mode production",
+    "build:dev": "tsc && vite build --mode development",
+    "build:prod": "tsc && vite build --mode production"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.246",
+    "@types/node": "^20.6.0",
+    "happy-dom": "^11.2.0",
+    "jsdom": "^22.1.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.5.3"
+  }
+}

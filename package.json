@@ -1,0 +1,22 @@
+{
+  "name": "sst",
+  "version": "1.0.0",
+  "description": "Smart Subtitle Translator",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm --recursive --parallel --stream run dev",
+    "client": "pnpm --filter @sst/client-popup",
+    "sandbox": "pnpm --filter @sst/sandbox",
+    "package:channel": "pnpm --filter @sst/channel"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sst/channel": "workspace:*",
+    "vitest": "^0.34.4"
+  },
+  "devDependencies": {
+    "sass": "^1.66.1"
+  }
+}
