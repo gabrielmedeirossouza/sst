@@ -1,7 +1,8 @@
 import { Page } from '../../components/global'
-import { Channel } from '@sst/channel'
+import { GlobalMessage } from '@sst/global-message'
+import { GlobalMessageProtocol } from '@sst/global-message-protocol'
 
-const channel = new Channel<string>('sst')
+const globalMessage = new GlobalMessage<GlobalMessageProtocol>()
 
 export function Main() {
   return (
@@ -9,7 +10,8 @@ export function Main() {
       Hello World!
       1 + 1 = 2
       <button type="button" onClick={() => {
-        channel.send("sst", 'hello world')
+        globalMessage.send("select-stream", "AMAZON_PRIME")
+        globalMessage.send("script-loaded")
       }}>send message</button>
     </Page>
   )

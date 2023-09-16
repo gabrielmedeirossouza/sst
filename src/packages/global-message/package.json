@@ -1,9 +1,9 @@
 {
-  "name": "@sst/channel",
+  "name": "@sst/global-message",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "./dist/channel.js",
+  "main": "./dist/global-message.js",
   "types": "./dist/main.d.ts",
   "scripts": {
     "test:dev": "vitest --mode development",

@@ -1,10 +1,10 @@
 import './styles.scss'
 
-interface IProps {
+interface Props {
   children: React.ReactNode;
 }
 
-export function Page({ children }: IProps) {
+export function Page({ children }: Props) {
   return (
     <main className="component-page">
       {children}

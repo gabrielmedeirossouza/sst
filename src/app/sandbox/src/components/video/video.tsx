@@ -1,12 +1,12 @@
 import React from 'react'
 import './styles.scss'
 
-import { Channel } from '@sst/channel'
+import { GlobalMessage } from '@sst/global-message'
+import { GlobalMessageProtocol } from "@sst/global-message-protocol"
 
-const channel = new Channel<string>('sst')
-channel.on((channel, message) => {
-  // if (channel !== 'sst') return
-  console.log('message', message)
+const globalMessage = new GlobalMessage<GlobalMessageProtocol>()
+globalMessage.on("select-stream", (message) => {
+  console.log(`Stream selected: ${message}`)
 })
 
 

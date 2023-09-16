@@ -8,13 +8,16 @@ importers:
 
   .:
     dependencies:
-      '@sst/channel':
+      '@sst/global-message':
         specifier: workspace:*
-        version: link:src/packages/channel
+        version: link:src/packages/global-message
       vitest:
         specifier: ^0.34.4
         version: 0.34.4(sass@1.66.1)
     devDependencies:
+      '@sst/global-message-protocol':
+        specifier: workspace:*
+        version: link:src/protocols/global-message-protocol
       sass:
         specifier: ^1.66.1
         version: 1.66.1
@@ -99,7 +102,7 @@ importers:
         specifier: ^4.4.5
         version: 4.4.9(@types/node@20.6.0)(sass@1.66.1)
 
-  src/packages/channel:
+  src/packages/global-message:
     devDependencies:
       '@types/chrome':
         specifier: ^0.0.246
@@ -122,6 +125,8 @@ importers:
       vite-plugin-dts:
         specifier: ^3.5.3
         version: 3.5.3(@types/node@20.6.0)(typescript@5.2.2)(vite@4.4.9)
+
+  src/protocols/global-message-protocol: {}
 
 packages:
 

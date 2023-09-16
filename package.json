@@ -7,16 +7,17 @@
     "dev": "pnpm --recursive --parallel --stream run dev",
     "client": "pnpm --filter @sst/client-popup",
     "sandbox": "pnpm --filter @sst/sandbox",
-    "package:channel": "pnpm --filter @sst/channel"
+    "package:global-message": "pnpm --filter @sst/global-message"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@sst/channel": "workspace:*",
+    "@sst/global-message": "workspace:*",
     "vitest": "^0.34.4"
   },
   "devDependencies": {
+    "@sst/global-message-protocol": "workspace:*",
     "sass": "^1.66.1"
   }
 }
